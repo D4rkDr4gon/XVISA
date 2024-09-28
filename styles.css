@@ -159,3 +159,18 @@ button:hover {
 .hidden {
     display: none;
 }
+
+/* Estilo para la galería de imágenes */
+.image-gallery {
+    display: flex;
+    justify-content: space-around; /* Distribuir las imágenes uniformemente */
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan si no caben en una línea */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.gallery-image {
+    width: 48%; /* Ajustar el tamaño de las imágenes */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espaciado inferior entre las imágenes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
