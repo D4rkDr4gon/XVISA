@@ -19,7 +19,7 @@ body {
 
 /* Contenedor de la invitación */
 .invitation-container {
-    max-width: 90%; /* Se ajusta automáticamente al ancho de la página */
+    max-width: 800px; /* Ancho máximo para que sea más cómodo */
     margin: 20px auto;
     background-color: white;
     border-radius: 15px; /* Borde redondeado */
@@ -30,29 +30,28 @@ body {
 /* Encabezado con fondo de imagen */
 .header {
     position: relative;
-    height: 250px;
+    height: 300px; /* Mayor altura para el encabezado */
     background-size: cover;
     background-position: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    display: flex; /* Para centrar el contenido */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Cambié a blanco para mejor contraste */
 }
 
 /* Estilo del h1 */
 .header h1 {
-    color: #3d3d3d; /* Color negro */
-    text-align: center;
     font-size: 3rem;
-    line-height: 250px; /* Centrar verticalmente el h1 */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 0;
 }
 
 /* Estilo del h2 */
 .header h2 {
-    color: #3d3d3d; /* Color negro */
-    text-align: center;
     font-size: 1.8rem;
-    margin-top: -60px; /* Ajusta la distancia entre el h1 y el h2 */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -65,7 +64,7 @@ body {
 .detail {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .detail i {
@@ -81,7 +80,7 @@ body {
 
 /* Estilo del mapa */
 .map {
-    height: 150px; /* Cambia esto a la altura deseada */
+    height: 200px; /* Cambia esto a la altura deseada */
     margin: 20px 0; /* Espaciado superior e inferior */
     border: 1px solid #ddd; /* Opcional: añade un borde sutil */
     border-radius: 5px; /* Opcional: bordes redondeados */
@@ -104,6 +103,8 @@ button {
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    flex: 1; /* Ajusta automáticamente el tamaño de los botones */
+    margin: 0 10px; /* Espaciado entre botones */
 }
 
 button:hover {
@@ -153,4 +154,34 @@ button:hover {
 /* Estilo de la galería */
 .gallery {
     text-align: center; /* Centrar el texto de la galería */
-    margin: 
+    margin: 20px; /* Espaciado alrededor de la galería */
+}
+
+.gallery-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #3d3d3d; /* Color negro */
+}
+
+/* Estilo del carrusel de imágenes */
+.carousel {
+    display: flex;
+    justify-content: center; /* Centra las imágenes */
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Efecto de ajuste */
+    gap: 10px; /* Espaciado entre imágenes */
+}
+
+.carousel-image {
+    width: 300px; /* Ancho fijo para las imágenes */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    scroll-snap-align: center; /* Alineación del ajuste */
+}
+
+/* Para pantalla más pequeña */
+@media (max-width: 768px) {
+    .carousel-image {
+        width: 80%; /* Ancho más pequeño en pantallas pequeñas */
+    }
+}
