@@ -19,9 +19,8 @@ const messageModal = document.getElementById('messageModal');
 const songBtn = document.getElementById('songBtn');
 const messageBtn = document.getElementById('messageBtn');
 const cancelSongBtn = document.getElementById('cancelSongBtn');
-const closeMessageBtn = document.getElementById('closeMessageBtn'); // Cambié el nombre a closeMessageBtn
+const closeMessageBtn = document.getElementById('closeMessageBtn');
 const songForm = document.getElementById('songForm');
-const messageForm = document.getElementById('messageForm');
 
 // Show and hide modals
 songBtn.addEventListener('click', () => {
@@ -33,7 +32,7 @@ messageBtn.addEventListener('click', () => {
 cancelSongBtn.addEventListener('click', () => {
   songModal.classList.add('hidden');
 });
-closeMessageBtn.addEventListener('click', () => { // Cambié el nombre a closeMessageBtn
+closeMessageBtn.addEventListener('click', () => {
   messageModal.classList.add('hidden');
 });
 
@@ -45,9 +44,21 @@ songForm.addEventListener('submit', (e) => {
   songModal.classList.add('hidden');
 });
 
-messageForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const messageInput = document.getElementById('messageInput').value; // Asegúrate de que este ID exista
-  console.log('Message added:', messageInput);
-  messageModal.classList.add('hidden');
-});
+// Initialize image carousel
+let currentImageIndex = 0;
+const images = document.querySelectorAll('.carousel-image');
+
+function showImage(index) {
+  images.forEach((img, i) => {
+    img.style.display = i === index ? 'block' : 'none';
+  });
+}
+
+// Change image every 3 seconds
+setInterval(() => {
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  showImage(currentImageIndex);
+}, 3000);
+
+// Show the first image initially
+showImage(currentImageIndex);

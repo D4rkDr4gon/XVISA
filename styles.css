@@ -29,7 +29,7 @@
   /* Encabezado con fondo de imagen */
   .header {
     position: relative;
-    height: 250px;
+    height: auto; /* Cambiado a auto para que se ajuste a la imagen */
     background-size: cover;
     background-position: center;
     border-top-left-radius: 15px;
@@ -60,6 +60,7 @@
     padding: 20px;
   }
   
+  /* Estilo de los detalles */
   .detail {
     display: flex;
     align-items: center;
@@ -148,46 +149,30 @@
     color: black; /* Color negro para el texto */
   }
   
-  /* Imágenes */
-  .images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* Estilo de la galería */
+  .gallery {
+    text-align: center; /* Centrar el texto de la galería */
     margin: 20px 0;
   }
   
-  .images img {
-    width: 80%; /* Ancho del 80% de la pantalla */
+  .carousel {
+    position: relative;
+    overflow: hidden; /* Esconder imágenes que no se muestran */
+  }
+  
+  .carousel-image {
+    width: 100%; /* Ancho del 100% para que ocupe el espacio disponible */
+    max-height: 300px; /* Limitar la altura máxima de las imágenes */
+    object-fit: cover; /* Asegurarse de que la imagen mantenga su aspecto */
     border-radius: 10px;
-    margin-bottom: 10px; /* Espacio entre imágenes */
+    display: none; /* Ocultar todas las imágenes inicialmente */
+  }
+  
+  .carousel-image:first-child {
+    display: block; /* Mostrar la primera imagen */
   }
   
   .hidden {
     display: none;
   }
   
-  /* Encabezado con fondo de imagen */
-.header {
-    position: relative;
-    height: auto; /* Cambiado a auto para que se ajuste a la imagen */
-    background-size: cover;
-    background-position: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-  
-  /* Imágenes */
-  .images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
-  .images img {
-    width: 100%; /* Ancho del 100% para que ocupe el espacio disponible */
-    max-height: 150px; /* Limitar la altura máxima de las imágenes */
-    object-fit: cover; /* Asegurarse de que la imagen mantenga su aspecto */
-    border-radius: 10px;
-    margin-bottom: 10px; /* Espacio entre imágenes */
-  }
