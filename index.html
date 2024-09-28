@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="invitation-container">
-    <div class="header" style="background-image: url('imagenes/horizontal 1.jpg')">
+    <div class="header">
       <h1>Mis XV!!</h1>
       <h2>¡¡¡Te invito a festejarlo juntos!!!</h2>
     </div>
@@ -28,9 +28,8 @@
         <i class="fas fa-tshirt"></i>
         <p><span>Dress Code:</span> Elegante</p>
       </div>
+      <div class="map" id="map"></div> <!-- Mapa debajo de los detalles -->
     </div>
-
-    <div class="map" id="map"></div> <!-- Mapa debajo de los detalles -->
 
     <div class="actions">
       <button id="songBtn"><i class="fas fa-music"></i> Canciones que no pueden faltar</button>
@@ -39,9 +38,9 @@
 
     <div id="songModal" class="modal hidden">
       <div class="modal-content">
-        <h2>Agregar Canción a la Lista</h2>
+        <h2>Add a Song to the Playlist</h2>
         <form id="songForm">
-          <input type="text" id="songInput" placeholder="Ingrese el nombre de la canción" required>
+          <input type="text" id="songInput" placeholder="Enter song name" required>
           <div class="modal-buttons">
             <button type="button" id="cancelSongBtn">Cancelar</button>
             <button type="submit">Agregar Canción</button>
@@ -69,15 +68,13 @@
       </div>
     </div>
 
-    <!-- Galería de imágenes -->
     <div class="gallery">
       <h3>Galería de Imágenes</h3>
       <div class="carousel">
-        <img src="imagenes/horizontal 1.jpg" alt="Imagen Horizontal 1" class="carousel-image">
-        <img src="imagenes/horizontal 2.jpg" alt="Imagen Horizontal 2" class="carousel-image hidden">
-        <img src="imagenes/horizontal 3.jpg" alt="Imagen Horizontal 3" class="carousel-image hidden">
-        <img src="imagenes/vertical 1.jpg" alt="Imagen Vertical 1" class="carousel-image hidden">
-        <img src="imagenes/vertical 2.jpg" alt="Imagen Vertical 2" class="carousel-image hidden">
+        <img src="imagenes/horizontal 2.jpg" alt="Imagen Horizontal 2" class="carousel-image">
+        <img src="imagenes/horizontal 3.jpg" alt="Imagen Horizontal 3" class="carousel-image">
+        <img src="imagenes/vertical 1.jpg" alt="Imagen Vertical 1" class="carousel-image">
+        <img src="imagenes/vertical 2.jpg" alt="Imagen Vertical 2" class="carousel-image">
       </div>
     </div>
   </div>
