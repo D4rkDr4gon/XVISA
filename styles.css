@@ -12,8 +12,9 @@ body {
     background-color: #f4f4f9; /* Fondo suave, sin degradado */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Alineación inicial en la parte superior */
     flex-direction: column; /* Asegúrate de que el contenido se centre verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
 }
 
 /* Contenedor de la invitación */
@@ -26,25 +27,32 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-/* Encabezado */
+/* Encabezado con fondo de imagen */
 .header {
-    text-align: center;
-    padding: 20px 0; /* Espacio alrededor del título */
+    position: relative;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 /* Estilo del h1 */
 .header h1 {
     color: #3d3d3d; /* Color negro */
+    text-align: center;
     font-size: 3rem;
-    margin-bottom: 10px; /* Espacio inferior */
+    line-height: 250px; /* Centrar verticalmente el h1 */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
 }
 
 /* Estilo del h2 */
 .header h2 {
     color: #3d3d3d; /* Color negro */
+    text-align: center;
     font-size: 1.8rem;
-    margin-top: -10px; /* Ajusta la distancia entre el h1 y el h2 */
+    margin-top: -60px; /* Ajusta la distancia entre el h1 y el h2 */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -145,36 +153,4 @@ button:hover {
 /* Estilo de la galería */
 .gallery {
     text-align: center; /* Centrar el texto de la galería */
-    margin: 20px 0;
-}
-
-.gallery h3 {
-    font-size: 2rem; /* Aumenta el tamaño del título */
-    color: #3d3d3d; /* Color negro */
-    margin-bottom: 15px; /* Espacio inferior */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra sutil */
-    font-weight: bold; /* Negrita para mayor énfasis */
-}
-
-.carousel {
-    position: relative;
-    overflow: hidden; /* Esconder imágenes que no se muestran */
-    display: flex;
-    justify-content: center; /* Centrar las imágenes */
-}
-
-.carousel-image {
-    width: 80%; /* Ancho del 80% para que ocupe el espacio disponible */
-    max-height: 200px; /* Limitar la altura máxima de las imágenes */
-    object-fit: contain; /* Asegurarse de que la imagen mantenga su aspecto */
-    border-radius: 10px;
-    display: none; /* Ocultar todas las imágenes inicialmente */
-}
-
-.carousel-image:first-child {
-    display: block; /* Mostrar la primera imagen */
-}
-
-.hidden {
-    display: none;
-}
+    margin: 
