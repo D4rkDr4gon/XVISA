@@ -102,10 +102,12 @@
   
   /* Estilo del mapa */
   .map {
-    height: 300px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    height: 200px; /* Cambia esto a la altura deseada */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    border: 1px solid #ddd; /* Opcional: añade un borde sutil */
+    border-radius: 5px; /* Opcional: bordes redondeados */
   }
+  
   
   /* Estilo del modal */
   .modal {
