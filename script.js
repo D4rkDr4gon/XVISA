@@ -3,7 +3,7 @@ const eventDetails = {
   date: "Noviembre 17, 2024",
   place: "Jano's Eventos - Gral. Güemes 897, B1873 Crucecita, Provincia de Buenos Aires",
   dressCode: "Elegante",
-  mapPosition: [-33.3190937, -60.2320488]
+  mapPosition: [-34.6744207,-58.370122]
 };
 
 // Initialize map
