@@ -15,13 +15,6 @@
       <h2>¡¡¡Te invito a festejarlo juntos!!!</h2>
     </div>
 
-    <div class="image-gallery">
-      <img src="imagenes/horizontal 2.jpg" alt="Horizontal 2" class="gallery-image">
-      <img src="imagenes/horizontal 3.jpg" alt="Horizontal 3" class="gallery-image">
-      <img src="imagenes/vertical 1.jpg" alt="Vertical 1" class="gallery-image">
-      <img src="imagenes/vertical 2.jpg" alt="Vertical 2" class="gallery-image">
-    </div>
-
     <div class="details">
       <div class="detail">
         <i class="fas fa-calendar-alt"></i>
@@ -35,45 +28,51 @@
         <i class="fas fa-tshirt"></i>
         <p><span>Dress Code:</span> Elegante</p>
       </div>
+      <div class="map" id="map"></div> <!-- Mapa debajo de los detalles -->
     </div>
 
     <div class="actions">
-      <button id="songBtn"><i class="fas fa-music"></i> canciones que no pueden faltar</button>
+      <button id="songBtn"><i class="fas fa-music"></i> Canciones que no pueden faltar</button>
       <button id="messageBtn"><i class="fas fa-envelope"></i> Regalo!!</button>
     </div>
 
-    <div id="map" class="map"></div>
-  </div>
-
-  <div id="songModal" class="modal hidden">
-    <div class="modal-content">
-      <h2>Add a Song to the Playlist</h2>
-      <form id="songForm">
-        <input type="text" id="songInput" placeholder="Enter song name" required>
-        <div class="modal-buttons">
-          <button type="button" id="cancelSongBtn">Cancel</button>
-          <button type="submit">Add Song</button>
-        </div>
-      </form>
+    <div id="songModal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Add a Song to the Playlist</h2>
+        <form id="songForm">
+          <input type="text" id="songInput" placeholder="Enter song name" required>
+          <div class="modal-buttons">
+            <button type="button" id="cancelSongBtn">Cancelar</button>
+            <button type="submit">Agregar Canción</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
 
-  <div id="messageModal" class="modal hidden">
-    <div class="modal-content">
-      <h2>Special Message</h2>
-      <p id="specialMessage">
-        ¡Tu presencia en este día tan especial es el mejor regalo que podrías darnos!<br><br>
-        Sin embargo, si deseas colaborar de alguna manera, te dejamos los datos de la cuenta bancaria que estaremos utilizando para recibir cualquier tipo de contribución:
-      </p>
-      <div class="bank-details">
-        <p><strong>Cuenta Bancaria:</strong></p>
-        <p><strong>Banco:</strong> Banco Ejemplo</p>
-        <p><strong>CBU:</strong> 1234567890123456789012</p>
-        <p><strong>Alias:</strong> MI_ALIAS_EJEMPLO</p>
+    <div id="messageModal" class="modal hidden">
+      <div class="modal-content">
+        <h2>¡Tu presencia es un regalo!</h2>
+        <p id="specialMessage">
+          ¡Tu presencia en este día tan especial es el mejor regalo que podrías darnos!<br><br>
+          Sin embargo, si deseas colaborar de alguna manera, te dejamos los datos de la cuenta bancaria que estaremos utilizando para recibir cualquier tipo de contribución:
+        </p>
+        <div class="bank-details">
+          <p><strong>Cuenta Bancaria:</strong></p>
+          <p><strong>Banco:</strong> Banco Ejemplo</p>
+          <p><strong>CBU:</strong> 1234567890123456789012</p>
+          <p><strong>Alias:</strong> MI_ALIAS_EJEMPLO</p>
+        </div>
+        <div class="modal-buttons">
+          <button type="button" id="closeMessageBtn">Cerrar</button>
+        </div>
       </div>
-      <div class="modal-buttons">
-        <button type="button" id="closeMessageBtn">Cerrar</button>
-      </div>
+    </div>
+
+    <div class="images">
+      <img src="imagenes/horizontal 2.jpg" alt="Imagen Horizontal 2">
+      <img src="imagenes/horizontal 3.jpg" alt="Imagen Horizontal 3">
+      <img src="imagenes/vertical 1.jpg" alt="Imagen Vertical 1">
+      <img src="imagenes/vertical 2.jpg" alt="Imagen Vertical 2">
     </div>
   </div>
 
