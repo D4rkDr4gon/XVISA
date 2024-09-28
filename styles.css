@@ -4,89 +4,98 @@
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-  }
-  
-  /* Fondo general */
-  body {
+}
+
+/* Fondo general */
+body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9; /* Fondo suave, sin degradado */
+    background-color: #f4f4f9; /* Fondo suave */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  /* Contenedor de la invitación */
-  .invitation-container {
+}
+
+/* Contenedor de la invitación */
+.invitation-container {
     max-width: 800px;
     margin: 20px auto;
     background-color: white;
     border-radius: 15px; /* Borde redondeado */
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  }
-  
-  /* Encabezado con fondo de imagen */
-  .header {
+}
+
+/* Encabezado con fondo de imagen */
+.header {
     position: relative;
     height: 250px;
     background-size: cover;
     background-position: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-  }
-  
-  /* Estilo del h1 */
-  .header h1 {
-    color: white;
+}
+
+/* Estilo del h1 */
+.header h1 {
+    color: #FFD700; /* Dorado */
     text-align: center;
     font-size: 3rem;
     line-height: 250px; /* Centrar verticalmente el h1 */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 0;
-  }
-  
-  /* Estilo del h2 */
-  .header h2 {
-    color: white;
+}
+
+/* Estilo del h2 */
+.header h2 {
+    color: #FFD700; /* Dorado */
     text-align: center;
     font-size: 1.8rem;
     margin-top: -60px; /* Ajusta la distancia entre el h1 y el h2 */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Detalles del evento */
-  .details {
+}
+
+/* Detalles del evento */
+.details {
     padding: 20px;
-  }
-  
-  .detail {
+}
+
+.detail {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-  }
-  
-  .detail i {
+}
+
+.detail i {
     margin-right: 10px;
     font-size: 1.5rem;
-    color: #e74c3c;
-  }
-  
-  .detail p {
+    color: #4CAF50; /* Verde */
+}
+
+.detail p {
     font-size: 1.2rem;
-    color: #333;
-  }
-  
-  .actions {
+    color: #333; /* Negro */
+}
+
+/* Estilo del mapa */
+.map {
+    height: 200px; /* Cambia esto a la altura deseada */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    border: 1px solid #ddd; /* Opcional: añade un borde sutil */
+    border-radius: 5px; /* Opcional: bordes redondeados */
+}
+
+/* Acciones */
+.actions {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-  }
-  
-  /* Botones principales */
-  button {
-    background-color: #e74c3c;
+}
+
+/* Botones principales */
+button {
+    background-color: #4CAF50; /* Verde */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -94,23 +103,14 @@
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #c0392b;
-  }
-  
-  /* Estilo del mapa */
-  .map {
-    height: 200px; /* Cambia esto a la altura deseada */
-    margin: 20px 0; /* Espaciado superior e inferior */
-    border: 1px solid #ddd; /* Opcional: añade un borde sutil */
-    border-radius: 5px; /* Opcional: bordes redondeados */
-  }
-  
-  
-  /* Estilo del modal */
-  .modal {
+}
+
+button:hover {
+    background-color: #388E3C; /* Verde oscuro */
+}
+
+/* Estilo del modal */
+.modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -121,31 +121,35 @@
     align-items: center;
     justify-content: center;
     z-index: 1000; /* Asegúrate de que el z-index sea alto */
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
     width: 90%; /* Más ancho para que sea más cómodo */
     max-width: 500px; /* Limitar el ancho máximo */
-  }
-  
-  
-  /* Botones dentro del modal */
-  .modal-buttons {
+}
+
+/* Botones dentro del modal */
+.modal-buttons {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
-  }
-  
-  .modal-buttons button {
+}
+
+.modal-buttons button {
     margin-left: 10px;
     padding: 10px;
     border-radius: 5px;
-  }
-  
-  .hidden {
+    background-color: #FFD700; /* Dorado para los botones del modal */
+    color: black; /* Texto negro en botones del modal */
+}
+
+.modal-buttons button:hover {
+    background-color: #FFC107; /* Un dorado más claro al pasar el mouse */
+}
+
+.hidden {
     display: none;
-  }
-  
+}
