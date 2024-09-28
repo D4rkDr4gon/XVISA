@@ -116,20 +116,21 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7); /* Un poco más oscuro para resaltar el modal */
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1000; /* Asegúrate de que el z-index sea alto */
   }
   
   .modal-content {
     background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    width: 400px;
-    max-width: 80%;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para darle enfoque */
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%; /* Más ancho para que sea más cómodo */
+    max-width: 500px; /* Limitar el ancho máximo */
   }
+  
   
   /* Botones dentro del modal */
   .modal-buttons {
