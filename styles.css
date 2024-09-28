@@ -19,7 +19,8 @@ body {
 
 /* Contenedor de la invitación */
 .invitation-container {
-    max-width: 800px;
+    width: 100%; /* Ajusta el ancho a 100% */
+    max-width: 800px; /* Limitar el ancho máximo */
     margin: 20px auto;
     background-color: white;
     border-radius: 15px; /* Borde redondeado */
@@ -129,6 +130,11 @@ button:hover {
     border-radius: 5px;
     width: 90%; /* Más ancho para que sea más cómodo */
     max-width: 500px; /* Limitar el ancho máximo */
+}
+
+/* Estilo del mensaje especial dentro del modal */
+#specialMessage {
+    color: #333; /* Cambiar a negro */
 }
 
 /* Botones dentro del modal */
