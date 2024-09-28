@@ -166,3 +166,28 @@
     display: none;
   }
   
+  /* Encabezado con fondo de imagen */
+.header {
+    position: relative;
+    height: auto; /* Cambiado a auto para que se ajuste a la imagen */
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  /* Imágenes */
+  .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .images img {
+    width: 100%; /* Ancho del 100% para que ocupe el espacio disponible */
+    max-height: 150px; /* Limitar la altura máxima de las imágenes */
+    object-fit: cover; /* Asegurarse de que la imagen mantenga su aspecto */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Espacio entre imágenes */
+  }
