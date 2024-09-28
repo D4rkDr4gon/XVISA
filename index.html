@@ -31,7 +31,7 @@
 
     <div class="actions">
       <button id="songBtn"><i class="fas fa-music"></i> Play Song</button>
-      <button id="messageBtn"><i class="fas fa-envelope"></i> Special Message</button>
+      <button id="messageBtn"><i class="fas fa-envelope"></i> Regalo!!</button>
     </div>
 
     <div id="map" class="map"></div>
@@ -52,16 +52,24 @@
 
   <div id="messageModal" class="modal hidden">
     <div class="modal-content">
-      <h2>Add a Special Message</h2>
-      <form id="messageForm">
-        <textarea id="messageInput" placeholder="Enter your special message" rows="4" required></textarea>
-        <div class="modal-buttons">
-          <button type="button" id="cancelMessageBtn">Cancel</button>
-          <button type="submit">Add Message</button>
-        </div>
-      </form>
+      <h2>Special Message</h2>
+      <p id="specialMessage">
+        ¡Tu presencia en este día tan especial es el mejor regalo que podrías darnos!<br><br>
+        Sin embargo, si deseas colaborar de alguna manera, te dejamos los datos de la cuenta bancaria que estaremos utilizando para recibir cualquier tipo de contribución:
+      </p>
+      <div class="bank-details">
+        <p><strong>Cuenta Bancaria:</strong></p>
+        <p><strong>Banco:</strong> Banco Ejemplo</p>
+        <p><strong>CBU:</strong> 1234567890123456789012</p>
+        <p><strong>Alias:</strong> MI_ALIAS_EJEMPLO</p>
+      </div>
+      <div class="modal-buttons">
+        <button type="button" id="closeMessageBtn">Cerrar</button>
+      </div>
     </div>
   </div>
+  
+  
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="script.js"></script>

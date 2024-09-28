@@ -8,6 +8,32 @@ body {
   background: linear-gradient(to right, #8e44ad, #e74c3c);
 }
 
+#specialMessage {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .bank-details {
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bank-details p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .bank-details strong {
+    color: #e74c3c;
+  }
+  
 .invitation-container {
   max-width: 800px;
   margin: 20px auto;
