@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #8e44ad, #e74c3c);
+}
+
+.invitation-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.header h1 {
+  color: white;
+  text-align: center;
+  line-height: 300px;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.details {
+  padding: 20px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.detail i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #e74c3c;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+.map {
+  height: 300px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  max-width: 80%;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.modal-buttons button {
+  margin-left: 10px;
+}
+
+.hidden {
+  display: none;
+}

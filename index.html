@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Invitation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+  <div class="invitation-container">
+    <div class="header" style="background-image: url('horizontal1.jpg')">
+      <h1>15th Birthday Bash!</h1>
+    </div>
+
+    <div class="details">
+      <div class="detail">
+        <i class="fas fa-calendar-alt"></i>
+        <p><span>Día:</span> Noviembre 17, 2024</p>
+      </div>
+      <div class="detail">
+        <i class="fas fa-map-marker-alt"></i>
+        <p><span>Lugar:</span> Jano's Eventos - Gral. Güemes 897, B1873 Crucecita, Provincia de Buenos Aires</p>
+      </div>
+      <div class="detail">
+        <i class="fas fa-tshirt"></i>
+        <p><span>Dress Code:</span> Elegante</p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="songBtn"><i class="fas fa-music"></i> Play Song</button>
+      <button id="messageBtn"><i class="fas fa-envelope"></i> Special Message</button>
+    </div>
+
+    <div id="map" class="map"></div>
+  </div>
+
+  <div id="songModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Add a Song to the Playlist</h2>
+      <form id="songForm">
+        <input type="text" id="songInput" placeholder="Enter song name" required>
+        <div class="modal-buttons">
+          <button type="button" id="cancelSongBtn">Cancel</button>
+          <button type="submit">Add Song</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="messageModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Add a Special Message</h2>
+      <form id="messageForm">
+        <textarea id="messageInput" placeholder="Enter your special message" rows="4" required></textarea>
+        <div class="modal-buttons">
+          <button type="button" id="cancelMessageBtn">Cancel</button>
+          <button type="submit">Add Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
