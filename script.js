@@ -3,7 +3,7 @@ const eventDetails = {
   date: "Noviembre 17, 2024",
   place: "Jano's Eventos - Gral. Güemes 897, B1873 Crucecita, Provincia de Buenos Aires",
   dressCode: "Elegante",
-  mapPosition: [-34.6744207,-58.370122]
+  mapPosition: [-34.6744207, -58.370122]
 };
 
 // Initialize map
@@ -19,7 +19,7 @@ const messageModal = document.getElementById('messageModal');
 const songBtn = document.getElementById('songBtn');
 const messageBtn = document.getElementById('messageBtn');
 const cancelSongBtn = document.getElementById('cancelSongBtn');
-const cancelMessageBtn = document.getElementById('cancelMessageBtn');
+const closeMessageBtn = document.getElementById('closeMessageBtn'); // Cambié el nombre a closeMessageBtn
 const songForm = document.getElementById('songForm');
 const messageForm = document.getElementById('messageForm');
 
@@ -33,7 +33,7 @@ messageBtn.addEventListener('click', () => {
 cancelSongBtn.addEventListener('click', () => {
   songModal.classList.add('hidden');
 });
-cancelMessageBtn.addEventListener('click', () => {
+closeMessageBtn.addEventListener('click', () => { // Cambié el nombre a closeMessageBtn
   messageModal.classList.add('hidden');
 });
 
@@ -47,7 +47,7 @@ songForm.addEventListener('submit', (e) => {
 
 messageForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  const messageInput = document.getElementById('messageInput').value;
+  const messageInput = document.getElementById('messageInput').value; // Asegúrate de que este ID exista
   console.log('Message added:', messageInput);
   messageModal.classList.add('hidden');
 });
