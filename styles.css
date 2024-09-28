@@ -148,14 +148,24 @@ button:hover {
     margin: 20px 0;
 }
 
+.gallery h3 {
+    font-size: 2rem; /* Aumenta el tamaño del título */
+    color: #3d3d3d; /* Color negro */
+    margin-bottom: 15px; /* Espacio inferior */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    font-weight: bold; /* Negrita para mayor énfasis */
+}
+
 .carousel {
     position: relative;
     overflow: hidden; /* Esconder imágenes que no se muestran */
+    display: flex;
+    justify-content: center; /* Centrar las imágenes */
 }
 
 .carousel-image {
-    width: 70%; /* Ancho del 70% para que ocupe el espacio disponible */
-    max-height: 150px; /* Limitar la altura máxima de las imágenes */
+    width: 80%; /* Ancho del 80% para que ocupe el espacio disponible */
+    max-height: 200px; /* Limitar la altura máxima de las imágenes */
     object-fit: contain; /* Asegurarse de que la imagen mantenga su aspecto */
     border-radius: 10px;
     display: none; /* Ocultar todas las imágenes inicialmente */
