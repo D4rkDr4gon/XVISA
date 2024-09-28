@@ -10,10 +10,16 @@
 </head>
 <body>
   <div class="invitation-container">
-    <div class="header" style="text-align: center;">
+    <div class="header" style="background-image: url('imagenes/horizontal 1.jpg')">
       <h1>Mis XV!!</h1>
       <h2>¡¡¡Te invito a festejarlo juntos!!!</h2>
-      <img src="imagenes/horizontal1.jpg" style="max-width: 100%; height: auto; margin-top: 20px;"> <!-- Imagen centrada -->
+    </div>
+
+    <div class="image-gallery">
+      <img src="imagenes/horizontal 2.jpg" alt="Horizontal 2" class="gallery-image">
+      <img src="imagenes/horizontal 3.jpg" alt="Horizontal 3" class="gallery-image">
+      <img src="imagenes/vertical 1.jpg" alt="Vertical 1" class="gallery-image">
+      <img src="imagenes/vertical 2.jpg" alt="Vertical 2" class="gallery-image">
     </div>
 
     <div class="details">
@@ -31,12 +37,12 @@
       </div>
     </div>
 
-    <div id="map" class="map" style="height: 200px;"></div> <!-- Ajustado el tamaño del mapa -->
-
     <div class="actions">
       <button id="songBtn"><i class="fas fa-music"></i> canciones que no pueden faltar</button>
       <button id="messageBtn"><i class="fas fa-envelope"></i> Regalo!!</button>
     </div>
+
+    <div id="map" class="map"></div>
   </div>
 
   <div id="songModal" class="modal hidden">
@@ -70,7 +76,7 @@
       </div>
     </div>
   </div>
-  
+
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>
