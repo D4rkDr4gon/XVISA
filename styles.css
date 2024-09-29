@@ -4,100 +4,93 @@
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-}
-
-/* Fondo general */
-body {
-    margin: 0;
-    background-color: #f4f4f9; /* Fondo suave, sin degradado */
+  }
+  
+  /* Fondo general */
+  body {
+    background-color: #f4f4f9;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh; /* Usar toda la altura de la ventana */
-}
-
-/* Contenedor de la invitación */
-.invitation-container {
-    max-width: 800px; /* Ancho máximo de 800px */
-    width: 90%; /* Se ajusta automáticamente al ancho de la página */
+    min-height: 100vh; /* Asegúrate de que cubra toda la altura de la pantalla */
+  }
+  
+  /* Contenedor de la invitación */
+  .invitation-container {
+    width: 90%;
+    max-width: 800px; /* Máximo ancho para dispositivos grandes */
     margin: 20px auto;
     background-color: white;
-    border-radius: 15px; /* Borde redondeado */
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
-/* Encabezado con fondo de imagen */
-.header {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Encabezado con fondo de imagen */
+  .header {
     position: relative;
-    height: 200px; /* Altura del encabezado */
+    height: 300px; /* Altura fija para el encabezado */
     background-size: cover;
     background-position: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-/* Estilo del h1 */
-.header h1 {
-    color: #3d3d3d; /* Color negro */
-    text-align: center;
-    font-size: 2.5rem; /* Tamaño ajustado */
-    line-height: 200px; /* Centrar verticalmente el h1 */
+    text-align: center; /* Centrar texto */
+  }
+  
+  .header h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 50px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin: 0;
-}
-
-/* Estilo del h2 */
-.header h2 {
-    color: #3d3d3d; /* Color negro */
-    text-align: center;
-    font-size: 1.5rem; /* Tamaño ajustado */
-    margin-top: -50px; /* Ajusta la distancia entre el h1 y el h2 */
+  }
+  
+  .header h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* Detalles del evento */
-.details {
+  }
+  
+  /* Detalles del evento */
+  .details {
     padding: 20px;
-}
-
-/* Estilo de los detalles */
-.detail {
+    background-color: #fff; /* Fondo blanco para los detalles */
+  }
+  
+  .detail {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-}
-
-.detail i {
+  }
+  
+  .detail i {
     margin-right: 10px;
     font-size: 1.5rem;
-    color: #3d3d3d; /* Color negro */
-}
-
-.detail p {
+    color: #3d3d3d;
+  }
+  
+  .detail p {
     font-size: 1.2rem;
-    color: #3d3d3d; /* Color negro */
-}
-
-/* Estilo del mapa */
-.map {
-    height: 150px; /* Cambia esto a la altura deseada */
-    margin: 20px 0; /* Espaciado superior e inferior */
-    border: 1px solid #ddd; /* Opcional: añade un borde sutil */
-    border-radius: 5px; /* Opcional: bordes redondeados */
-}
-
-/* Acciones */
-.actions {
+    color: #3d3d3d;
+  }
+  
+  /* Estilo del mapa */
+  .map {
+    height: 200px;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  
+  /* Acciones */
+  .actions {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-}
-
-/* Botones principales */
-button {
-    background-color: #d4af37; /* Color dorado */
+    background-color: #f9f9f9;
+  }
+  
+  /* Botones principales */
+  button {
+    background-color: #d4af37;
     color: black;
     padding: 10px 20px;
     border: none;
@@ -105,80 +98,85 @@ button {
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #b8860b; /* Color dorado más oscuro */
-}
-
-/* Estilo del modal */
-.modal {
+    flex-grow: 1; /* Hacer que los botones se expandan */
+    margin: 0 5px; /* Espacio entre botones */
+  }
+  
+  button:hover {
+    background-color: #b8860b;
+  }
+  
+  /* Estilo del modal */
+  .modal {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7); /* Un poco más oscuro para resaltar el modal */
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000; /* Asegúrate de que el z-index sea alto */
-}
-
-.modal-content {
+    z-index: 1000;
+  }
+  
+  .modal-content {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    width: 90%; /* Más ancho para que sea más cómodo */
-    max-width: 500px; /* Limitar el ancho máximo */
-}
-
-/* Botones dentro del modal */
-.modal-buttons {
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  /* Botones dentro del modal */
+  .modal-buttons {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
-}
-
-.modal-buttons button {
+  }
+  
+  .modal-buttons button {
     margin-left: 10px;
     padding: 10px;
     border-radius: 5px;
-}
-
-/* Mensaje especial */
-#specialMessage {
-    color: black; /* Color negro para el texto */
-}
-
-/* Estilo de la galería */
-.gallery {
-    text-align: center; /* Centrar el texto de la galería */
+  }
+  
+  /* Mensaje especial */
+  #specialMessage {
+    color: black;
+  }
+  
+  /* Estilo de la galería */
+  .gallery {
+    text-align: center;
     margin: 20px 0;
-}
-
-.gallery h3 {
-    font-size: 2rem; /* Tamaño del título de la galería */
-    color: #3d3d3d; /* Color negro */
-    margin-bottom: 15px; /* Espacio debajo del título */
-}
-
-.images {
-    display: flex;
-    flex-wrap: wrap; /* Permitir que las imágenes se ajusten */
-    justify-content: center; /* Centrar las imágenes */
-    margin: 20px 0;
-}
-
-.images img {
-    width: 90%; /* Ancho del 90% para que se autoajuste */
-    max-width: 300px; /* Limitar el ancho máximo de las imágenes */
-    max-height: 200px; /* Limitar la altura máxima de las imágenes */
-    object-fit: cover; /* Asegurarse de que la imagen mantenga su aspecto */
-    border-radius: 10px;
-    margin: 10px; /* Espacio entre imágenes */
-}
-
-.hidden {
+    padding: 20px; /* Espaciado para la galería */
+    background-color: #f9f9f9; /* Fondo suave */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  .gallery-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333; /* Color del título */
+  }
+  
+  .carousel {
+    display: flex; /* Flexbox para las imágenes */
+    justify-content: center;
+    gap: 10px; /* Espaciado entre imágenes */
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
+  }
+  
+  .carousel-image {
+    width: 100%; /* Ancho completo */
+    max-width: 200px; /* Ancho máximo de cada imagen */
+    border-radius: 5px; /* Bordes redondeados para imágenes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ocultar elementos */
+  .hidden {
     display: none;
-}
+  }
+  
