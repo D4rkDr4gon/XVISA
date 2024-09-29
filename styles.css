@@ -30,25 +30,32 @@
   /* Encabezado con fondo de imagen */
   .header {
     position: relative;
-    height: 300px; /* Altura fija para el encabezado */
-    background-size: cover;
-    background-position: center;
-    text-align: center; /* Centrar texto */
-  }
-  
-  .header h1 {
-    color: #fff;
-    font-size: 3rem;
-    margin-top: 50px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  .header h2 {
-    color: #fff;
-    font-size: 1.5rem;
-    margin-top: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+    height: auto; /* Ajustar a la altura del contenido */
+    text-align: center; /* Centrar el texto */
+    color: white; /* Color del texto */
+}
+
+.banner {
+    height: 200px; /* Altura del banner */
+    background-color: #6a1b9a; /* Color de fondo del banner */
+    border-top-left-radius: 15px; /* Bordes redondeados */
+    border-top-right-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para el banner */
+}
+
+.header h1 {
+    font-size: 3rem; /* Tamaño del título */
+    margin: 20px 0 0; /* Espaciado superior */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+}
+
+.header h2 {
+    font-size: 1.5rem; /* Tamaño del subtítulo */
+    margin-top: 10px; /* Espaciado entre h1 y h2 */
+    font-weight: 300; /* Peso ligero para elegancia */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+}
+
   
   /* Detalles del evento */
   .details {
