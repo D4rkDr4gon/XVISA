@@ -27,34 +27,37 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
   
-  /* Encabezado con fondo de imagen */
-  .header {
+/* Encabezado estilizado */
+.header {
     position: relative;
-    height: auto; /* Ajustar a la altura del contenido */
-    text-align: center; /* Centrar el texto */
-    color: white; /* Color del texto */
+    height: auto; /* Ajustado para que se adapte a su contenido */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden; /* Para ocultar contenido excedente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(245, 203, 169, 0.8), rgba(237, 147, 98, 0.8)); /* Degradado de color suave */
+    padding: 40px 20px; /* Espaciado interno */
 }
 
-.banner {
-    height: 200px; /* Altura del banner */
-    background-color: #6a1b9a; /* Color de fondo del banner */
-    border-top-left-radius: 15px; /* Bordes redondeados */
-    border-top-right-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para el banner */
+.header-banner {
+    text-align: center; /* Centrando el texto */
+    color: #3d3d3d; /* Color del texto */
 }
 
 .header h1 {
-    font-size: 3rem; /* Tamaño del título */
-    margin: 20px 0 0; /* Espaciado superior */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+    font-size: 3rem; /* Tamaño grande para el título */
+    margin-bottom: 10px; /* Espacio entre h1 y h2 */
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8); /* Sombra suave para dar profundidad */
 }
 
 .header h2 {
-    font-size: 1.5rem; /* Tamaño del subtítulo */
-    margin-top: 10px; /* Espaciado entre h1 y h2 */
-    font-weight: 300; /* Peso ligero para elegancia */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+    font-size: 1.8rem; /* Tamaño más pequeño para el subtítulo */
+    font-weight: 300; /* Peso de fuente ligero para un look elegante */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* Sombra suave */
 }
+
 
   
   /* Detalles del evento */
