@@ -51,7 +51,7 @@ songForm.addEventListener('submit', (e) => {
 
 messageForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  const messageInput = document.getElementById('messageInput').value; // Asegúrate de que este ID exista
+  const messageInput = document.getElementById('messageInput').value;
   console.log('Message added:', messageInput);
   messageModal.classList.add('hidden');
 });

@@ -12,14 +12,15 @@ body {
     background-color: #f4f4f9; /* Fondo suave, sin degradado */
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alineación inicial en la parte superior */
-    flex-direction: column; /* Asegúrate de que el contenido se centre verticalmente */
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Usar toda la altura de la ventana */
 }
 
 /* Contenedor de la invitación */
 .invitation-container {
-    max-width: 800px; /* Ancho máximo para que sea más cómodo */
+    max-width: 800px; /* Ancho máximo de 800px */
+    width: 90%; /* Se ajusta automáticamente al ancho de la página */
     margin: 20px auto;
     background-color: white;
     border-radius: 15px; /* Borde redondeado */
@@ -30,28 +31,29 @@ body {
 /* Encabezado con fondo de imagen */
 .header {
     position: relative;
-    height: 300px; /* Mayor altura para el encabezado */
+    height: 200px; /* Altura del encabezado */
     background-size: cover;
     background-position: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    display: flex; /* Para centrar el contenido */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white; /* Cambié a blanco para mejor contraste */
 }
 
 /* Estilo del h1 */
 .header h1 {
-    font-size: 3rem;
+    color: #3d3d3d; /* Color negro */
+    text-align: center;
+    font-size: 2.5rem; /* Tamaño ajustado */
+    line-height: 200px; /* Centrar verticalmente el h1 */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 0;
 }
 
 /* Estilo del h2 */
 .header h2 {
-    font-size: 1.8rem;
+    color: #3d3d3d; /* Color negro */
+    text-align: center;
+    font-size: 1.5rem; /* Tamaño ajustado */
+    margin-top: -50px; /* Ajusta la distancia entre el h1 y el h2 */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -64,7 +66,7 @@ body {
 .detail {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .detail i {
@@ -80,7 +82,7 @@ body {
 
 /* Estilo del mapa */
 .map {
-    height: 200px; /* Cambia esto a la altura deseada */
+    height: 150px; /* Cambia esto a la altura deseada */
     margin: 20px 0; /* Espaciado superior e inferior */
     border: 1px solid #ddd; /* Opcional: añade un borde sutil */
     border-radius: 5px; /* Opcional: bordes redondeados */
@@ -103,8 +105,6 @@ button {
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
-    flex: 1; /* Ajusta automáticamente el tamaño de los botones */
-    margin: 0 10px; /* Espaciado entre botones */
 }
 
 button:hover {
@@ -154,34 +154,31 @@ button:hover {
 /* Estilo de la galería */
 .gallery {
     text-align: center; /* Centrar el texto de la galería */
-    margin: 20px; /* Espaciado alrededor de la galería */
+    margin: 20px 0;
 }
 
-.gallery-title {
-    font-size: 2rem;
-    margin-bottom: 15px;
+.gallery h3 {
+    font-size: 2rem; /* Tamaño del título de la galería */
     color: #3d3d3d; /* Color negro */
+    margin-bottom: 15px; /* Espacio debajo del título */
 }
 
-/* Estilo del carrusel de imágenes */
-.carousel {
+.images {
     display: flex;
-    justify-content: center; /* Centra las imágenes */
-    overflow-x: auto; /* Permite el desplazamiento horizontal */
-    scroll-snap-type: x mandatory; /* Efecto de ajuste */
-    gap: 10px; /* Espaciado entre imágenes */
+    flex-wrap: wrap; /* Permitir que las imágenes se ajusten */
+    justify-content: center; /* Centrar las imágenes */
+    margin: 20px 0;
 }
 
-.carousel-image {
-    width: 300px; /* Ancho fijo para las imágenes */
-    height: auto; /* Mantiene la proporción */
-    border-radius: 10px; /* Bordes redondeados para las imágenes */
-    scroll-snap-align: center; /* Alineación del ajuste */
+.images img {
+    width: 90%; /* Ancho del 90% para que se autoajuste */
+    max-width: 300px; /* Limitar el ancho máximo de las imágenes */
+    max-height: 200px; /* Limitar la altura máxima de las imágenes */
+    object-fit: cover; /* Asegurarse de que la imagen mantenga su aspecto */
+    border-radius: 10px;
+    margin: 10px; /* Espacio entre imágenes */
 }
 
-/* Para pantalla más pequeña */
-@media (max-width: 768px) {
-    .carousel-image {
-        width: 80%; /* Ancho más pequeño en pantallas pequeñas */
-    }
+.hidden {
+    display: none;
 }
